@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        //before ECMA 
+        //class function 
+
+        // function Person(name){//we can also say this blueprint...
+            //this.name = name;
+
+      //  }
+
+        //const anoop = new Person('Anoop');//create the function object..
+        //const sain = new Person('sain');
+       // anoop.name = 'Developer'//we can change the name
+     //   console.log(anoop);
+
+
+     //after ECMA--------------------------------
+     //class m hm prpeties lete hn ,
+     // method define krte hn,
+     // object create krte hn ,
+     //constructor pass krate hn,
+
+      class person{
+          constructor(name,age){
+              this.name = name;
+              
+          }
+          greet(){
+              console.log('good night');
+          }
+      }
+
+    const anoop = new person('anoop');
+    const john = new person('john');
+
+    
+    console.log(anoop.greet());
+
+
+
+
+    </script>
+    
+</body>
+</html>

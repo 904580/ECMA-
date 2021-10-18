@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises</title>
+</head>
+<body>
+
+    <script>
+       
+
+        //ASync call
+        //isme Redirecting phle ho rha h .this is not right way...
+        //isko solve krne ke liye callback function aya..
+
+       // function login(callback){
+          //  setTimeout(()=>{
+               // console.log('login..');
+             //   callback();
+//
+         //   },1000)
+      //  }
+
+//login((callback)=>{
+    //console.log('redirecting');
+
+//});
+
+//this is not right way her baar hme callback function pass krana pdta tha...
+//iske resolve ke liye Promises aya..
+
+//promises(resolve,reject);
+//resolve ke saath---.then
+//reject ke saath--.error
+
+function login(){
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=> {
+        console.log('login...');
+        resolve();
+        //reject();
+    },4000);
+
+    });
+}
+login().then(()=>{
+    console.log('redirecting');
+
+
+})
+//.catch((err)=>{
+  //  console.log('error...');
+//});
+
+
+
+
+    </script>  
+</body>
+</html>

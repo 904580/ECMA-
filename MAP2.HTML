@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <P id ="showdata"</P>
+
+    <script>
+
+        //syntax = 
+        //array.map(function (current vale,index,array),thisValue)
+        //map method array ke element ko traversing krta hai manipulate krta hai or ek ek element ko read krta h 
+        //or value print krta hai.. basically hm iska use looping ke lie krte hn
+        // ye existing array mai kuch change nhi krta hai ................
+        //new array mai data manipulate, traversing krta h
+
+        const oldarr = ['anoop','kumar','saini'];
+        const newarr = oldarr.map(function(cvalue) {
+            //console.log(array);
+        
+            return  cvalue + "diksha";
+
+        });
+        console.log(newarr);
+        console.log(oldarr);
+
+document.getElementById('showdata').innerHTML =newarr;
+
+
+    </script>
+    
+</body>
+</html>

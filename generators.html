@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick= "getSteps()">Go step by step</button>
+    <script>
+        //eg-1
+        //function * testGenerate()
+        //{ 
+            //console.log("1st execution")
+            //console.log("Hello all")
+            //yield 1
+            //console.log("2nd execution")
+            //yield 2
+           // consol.log("3rd execution")
+            //yield
+       // }
+        //let res =testGenerate()
+       // console.log(res.next())
+
+       function* Steps(){
+           let a=20;
+           let b=21;
+           console.log(20+21)
+           yield 'step 1 done'
+           console.log(20-21)
+           yield 'step 2 done'
+           console.log(20*21)
+           yield 'step 3 done'
+           return 'all step done'
+
+
+       }
+       let stp = Steps();
+     function getSteps()
+     {
+         console.log(stp.next());
+     }
+    
+
+       
+
+
+    </script>
+    
+</body>
+</html>

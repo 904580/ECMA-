@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>var keyword</title>
+</head>
+
+<body>
+    <script>
+
+        //synchronous
+        //const func2 = ()=>{
+        // console.log('this is func3');
+        // }
+
+        // const func1 = ()=>{
+        // console.log('hello this is func1');
+        // func2();
+        // console.log('hello this is func2');
+
+        //  }
+
+        //  func1();
+
+
+
+
+
+        //Asynchronous
+        const func2 = () => {
+            setTimeout(() => {
+                console.log('this is func3');
+            }, 8000)
+
+        }
+        const func1 = () => {
+            console.log('hello this is func1');
+            func2();
+            console.log('hello this is func2');
+
+        }
+
+        func1();
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

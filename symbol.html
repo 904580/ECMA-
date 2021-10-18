@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>var keyword</title>
+</head>
+<body>
+    <script>
+        //ex-1
+
+        //const mySymbol = Symbol()
+        //const mySymbol=Symbol(description)
+        //consol.log(mySymbol);
+
+
+//ex-2
+        //const s1 = Symbol();
+        //const s2 =Symbol();
+        //console.log(typeof s1)
+        //console.log(s1===s2);//RETURN UNIQUE OBJECTS KEYS..
+        //const s3 =("hello");
+        //const s4 =("hello");
+        //console.log(s3);
+        //console.log(s4);
+        //console.log(s3==s4);
+
+
+        //ex-3
+
+        //using with class
+
+        //const COLOR = Symbol()
+        //const MODEL = Symbol()
+        //const MAKE = Symbol()
+
+        //class Bike{
+            //constructor(color,model,make){
+               // this[COLOR] = color;
+               // this[MODEL]= model;
+               // this[MAKE]=make;
+           // }
+            
+      //  }
+
+        //let bike =new Bike ('red','honda','cbr')
+       // console.log(bike)
+        //console.log(bike[COLOR])
+       // console.log(bike[MAKE])
+        
+        
+
+        //EX-4
+        //USING WITH OBJ.
+        //symbol m hmj for in loop use nhi krte hn..
+        //js ami hm obj isliye use krte hn kiyo ki ubj json m eaisly convert ho jata h ..
+        //
+
+        let  age = Symbol("age");
+        let user = {
+            name : 'Anoop',
+            course : "MCA",
+            //[age] : 25
+
+
+        };
+        user[age] =34;
+        user["gender"] = "male";
+
+       // for (let key in user){
+           // console.log(key); 
+       // }
+        
+        console.log(user);
+        console.log(JSON.stringify(user))//convert JSON format..
+        //console.log(user[age]);
+        
+       
+
+</script>
+    
+</body>
+</html>

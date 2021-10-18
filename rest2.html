@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECMA</title>
+</head>
+<body>
+    <script>
+//REST operator...
+//hme nhi pta ki kitne parameters aane  wale hn isliye rest operator use krte hn..
+// isko hm function m  use use krte hn
+
+//example before REST operator
+
+//const addItems= (a,b,c)=>{
+  ////  console.log(a+b+c);
+//}
+
+//addItems(2,6,9);
+
+
+
+//after REST operator
+const addItems= (...items)=>{
+    console.log(items);
+}
+
+addItems(2,6,9,8,0,547456,8785,697);
+        
+</script> 
+    
+</body>
+</html

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let  keyword</title>
+</head>
+<body>
+    <script>
+
+        //1- let stored the variable in the memory
+        // block scope like--below
+
+       // var a =10;
+        
+           // if(true)
+          //  {
+           //let a=20;
+          //  console.log(a)
+       // }
+      //  console.log(a);
+
+
+
+      //2- example-------global scope
+
+     // var age = 21;
+      //if(age>=21)
+      //{
+         // var driving = true;
+      //}
+
+     // console.log(driving);
+
+
+     //3 example --block scope
+
+     //let age = 21;
+      //if(age>=21)
+      //{
+         // let driving = true;
+          //console.log(driving);
+     // }
+
+      //console.log(driving);
+
+
+
+      //4-example--- Overwrite 
+      //var mai hum overwrite ka output deta hai..
+
+      //var product = "mobile";
+      //var product = "TV";
+      //console.log(product);
+
+      //5-example overwrite with let showing uncaught error
+
+      let product = "mobile";
+      let product = "TV";
+      console.log(product);
+</script>
+    
+</body>
+</html>

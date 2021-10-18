@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class</title>
+</head>
+<body>
+    <script>
+
+        class Fruits
+        {
+            name ="orange";
+            constructor()
+            {
+                console.log("hey i am constructor", this.name);
+
+            }
+            getFruits()  // we do not write the function in class we can create annonymous fun..
+            {        
+                return "apple"
+
+            }
+
+        }
+
+        let f1 = new Fruits; //call the class
+       // f1.getFruits//call the function
+       console.log(f1.getFruits())
+
+        
+
+       
+
+
+        
+
+</script>
+    
+</body>
+</html>

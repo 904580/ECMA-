@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>closure</title>
+</head>
+<body>
+    <script>
+        // closure can access the global var
+        //closure can access the outer function
+        //closure can access the local variable
+        //but outer function can not access the inner function variable..
+        //closure wha bnta h jha pr hm outer function ke var ko inner function ke var mai access kr\te hn ....
+
+     var a ="this is a";   //global variable 
+    function show(){  //outer fun
+        var j = "j is a local variable of outer function";//local variable 
+        console.log( j );
+        function innerFun(){   //inner function
+            var i = "i is local variable of inner function";
+            console.log(i);
+            console.log( j );
+            console.log(a);
+        }
+        innerFun();
+       // console.log(i);
+    }
+    
+        
+        show();
+
+</script>
+    
+</body>
+</html>

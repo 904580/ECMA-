@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //object destructuring//before ECMA
+
+        //const user = {
+           // Name :'anoop',
+            //age : 23,
+           // Girlfriend : 'diksha',
+         //   occupation : 'developer',
+            //address : 'sambhal',
+
+       // };
+        //console.log(user.age);
+        //console.log(user);
+      //  console.log(user.address);
+
+
+        //after ECMA
+        //we can give the alias name in object destructuring-------
+const user = {
+    name: 'anoop',
+    class: 'MCA',
+    address: 'sambar',
+    age: 23,
+    occupation: 'developer',
+};
+const {name: nickname,address}=user;
+console.log(nickname);
+        
+</script>
+    
+</body>
+</html
